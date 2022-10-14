@@ -1,0 +1,30 @@
+{
+  "name": "html2component",
+  "version": "0.0.2",
+  "description": "Render a markup into some JavaScript/TypeScript code, it's fancy!",
+  "license": "MIT",
+  "author": "Luca",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucacicada/html2component.git",
+    "directory": "packages/html2component"
+  },
+  "bugs": {
+    "url": "https://github.com/lucacicada/html2component/issues"
+  },
+  "homepage": "https://github.com/lucacicada/html2component/tree/main/#readme",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "html-entities": "^2.3.3",
+    "posthtml-parser": "^0.11.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.4"
+  }
+}
