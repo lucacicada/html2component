@@ -1,6 +1,10 @@
 {
   "private": true,
   "packageManager": "pnpm@6.32.3",
+  "scripts": {
+    "build": "cd packages/html2component && npm run build",
+    "build:playground": "cd packages/playground && npm run build"
+  },
   "pnpm": {
     "overrides": {
       "html2component": "link:./packages/html2component"
