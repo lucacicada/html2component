@@ -3,7 +3,7 @@ import { defineComponent, ref, watch } from 'vue'
 import { Codemirror } from 'vue-codemirror'
 import { javascript } from '@codemirror/lang-javascript'
 import { oneDark } from '@codemirror/theme-one-dark'
-import { compile } from 'html2component'
+import { compile, parse } from 'html2component'
 
 export default defineComponent({
   components: {
@@ -36,7 +36,7 @@ export default defineComponent({
     const extensions = [javascript({ typescript: true }), oneDark]
 
     function convert() {
-      output.value = compile(html.value)
+      output.value = compile(parse(html.value))
     }
 
     watch(html, () => {
